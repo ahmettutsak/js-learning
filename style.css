@@ -59,9 +59,23 @@
     border-radius: 5px;
     margin: 5px 0;
   }
+  .btn-red {
+    display: block;
+    width: 100%;
+    padding: 10px 15px;
+    border: 0;
+    background: rgb(143, 45, 45);
+    color: #fff;
+    border-radius: 5px;
+    margin: 5px 0;
+  }
   
   .btn:hover {
     background: #444;
+  }
+  
+  .btn-red:hover {
+    background: rgb(112, 35, 35);
   }
   
   .bg-dark {
@@ -74,4 +88,5 @@
     color: #fff;
     padding: 5px;
     margin: 5px;
+    text-align: center;
   }

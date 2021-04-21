@@ -226,26 +226,51 @@
 // btn.addEventListener("click" ,(e) => {
 //     btn.style.background = "green";
 // })
-// const myForm = document.querySelector('#my-form');
-// const nameInput = document.querySelector('#name');
-// const emailInput = document.querySelector('#email');
-// const msg = document.querySelector('.msg');
-// const userList = document.querySelector('#users');
-// // Listen for form submit
-// myForm.addEventListener('submit', onSubmit);
-// function onSubmit(e) {
+// class User {
+//     constructor(ad,email){
+//         this.ad = ad;
+//         this.email = email;
+//     }
+// }
+// const u1 = new User("denene","asdsdaasddas");
+// const u2 = new User("hehehe","sfdnjksdnjksdv");
+// const listemm = [u1,u2];
+// const my_form = document.querySelector("#my-form");
+// const msg = document.querySelector(".msg");
+// const names = document.querySelector("#name");
+// const email = document.querySelector("#email");
+// const userList = document.querySelector("#users");
+// window.onload = function() {
+//     listemm.forEach(function(kullanici){
+//         const li = document.createElement("li");
+//         li.textContent = `İsim: ${kullanici.ad} Email: ${kullanici.email}`;
+//         const listt = document.getElementsByTagName("li");
+//         userList.appendChild(li);
+//    }); 
+//   };
+// my_form.addEventListener("submit",submited);
+// function submited(e){
 //     e.preventDefault();
-//     if(nameInput.value === "" || emailInput.value ===""){
-//         msg.textContent = "lütfen doldurunuz";
+//     if(names.value === "" || email.value === ""){
+//         msg.textContent = "Kutuları lütfen doldurunuz!"
 //         msg.classList.add("error");
 //         setTimeout(() => msg.remove(), 2000);
 //     }
-//     else{
-//         const li = document.createElement('li');
-//         li.appendChild(document.createTextNode(`İsim: ${nameInput.value} Email: ${emailInput.value}`));
+//     else
+//     {
+//         const li = document.createElement("li");
+//         li.textContent = `İsim: ${names.value} Email: ${email.value}`;
+//         const listt = document.getElementsByTagName("li");
 //         userList.appendChild(li);
-//         nameInput.value = "";
-//         emailInput.value = "";
+//         names.value = "";
+//         email.value = "";
 //     }
+// }
+// my_form.addEventListener("reset",reseted);
+// function reseted(e){
+//     const listt = document.querySelectorAll("li")
+//     listt.forEach(function(liitems){
+//              liitems.remove();
+//         });   
 // }
 "use strict";
