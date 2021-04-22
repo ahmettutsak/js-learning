@@ -92,3 +92,10 @@
     margin: 5px;
     text-align: center;
   }
+  .succses {
+    background: rgb(85, 255, 0);
+    color: #fff;
+    padding: 5px;
+    margin: 5px;
+    text-align: center;
+  }

@@ -226,41 +226,46 @@
 // btn.addEventListener("click" ,(e) => {
 //     btn.style.background = "green";
 // })
-// class User {
+// class User{
 //     constructor(ad,email){
 //         this.ad = ad;
 //         this.email = email;
 //     }
 // }
-// const u1 = new User("denene","asdsdaasddas");
-// const u2 = new User("hehehe","sfdnjksdnjksdv");
-// const listemm = [u1,u2];
+// const u1 = new User("asdsasd","asdasdads");
+// const u2 = new User("dasdasd","asdasdads");
+// const u3 = new User("asdasad","asdasdads");
+// const u4 = new User("asddasd","asdasdads");
+// const u5 = new User("assdasd","asdasdads");
+// const u6 = new User("asd2asd","asdasdads");
+// const u7 = new User("asdaasd","asdasdads");
+// const u8 = new User("as4dasd","asdasdads");
+// const u9 = new User("asda5sd","asdasdads");
+// const my_list = [u1,u2,u3,u4,u5,u6,u7,u8,u9];
 // const my_form = document.querySelector("#my-form");
 // const msg = document.querySelector(".msg");
 // const names = document.querySelector("#name");
 // const email = document.querySelector("#email");
 // const userList = document.querySelector("#users");
-// window.onload = function() {
-//     listemm.forEach(function(kullanici){
+// window.onload = function(){
+//     my_list.forEach(function(user){
 //         const li = document.createElement("li");
-//         li.textContent = `İsim: ${kullanici.ad} Email: ${kullanici.email}`;
-//         const listt = document.getElementsByTagName("li");
+//         li.textContent = `İsim: ${user.ad} Email: ${user.email}`;
 //         userList.appendChild(li);
-//    }); 
-//   };
+//     });
+// }
 // my_form.addEventListener("submit",submited);
 // function submited(e){
 //     e.preventDefault();
 //     if(names.value === "" || email.value === ""){
-//         msg.textContent = "Kutuları lütfen doldurunuz!"
+//         msg.textContent = "Alanları boş bırakamazsınız!";
 //         msg.classList.add("error");
-//         setTimeout(() => msg.remove(), 2000);
+//         setTimeout(() => msg.classList.remove("error"), 1500);
+//         setTimeout(() => msg.textContent="", 1500);
 //     }
-//     else
-//     {
+//     else{
 //         const li = document.createElement("li");
 //         li.textContent = `İsim: ${names.value} Email: ${email.value}`;
-//         const listt = document.getElementsByTagName("li");
 //         userList.appendChild(li);
 //         names.value = "";
 //         email.value = "";
@@ -268,9 +273,13 @@
 // }
 // my_form.addEventListener("reset",reseted);
 // function reseted(e){
-//     const listt = document.querySelectorAll("li")
-//     listt.forEach(function(liitems){
-//              liitems.remove();
-//         });   
+//     const list_items = document.querySelectorAll("li");
+//     list_items.forEach(function(items){
+//         items.remove();
+//         msg.textContent = "Bütün kayıtlar temizlendi";
+//         msg.classList.add("succses");
+//         setTimeout(() => msg.classList.remove("succses"), 1500);
+//         setTimeout(() => msg.textContent="", 1500);
+//     });
 // }
 "use strict";
